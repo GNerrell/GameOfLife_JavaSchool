@@ -46,10 +46,11 @@ public class Game {
      */
     public void startGame() {
         Scanner scanner = new Scanner(System.in);
+        printGameState();
         System.out.println("Enter 0 to move to the next phase or other number to exit program: ");
         while (scanner.nextInt() != 0) {
-            printGameState();
             nextIteration();
+            printGameState();
             System.out.println();
             System.out.println("Enter 0 to move to the next phase or other number to exit program: ");
         }
